@@ -7,38 +7,34 @@ toc: true
 
 📅 **Fecha:** A definir
 
-
 🕕 **Horario:** A definir
-
 
 ## 🎯 Objetivo del taller
 
 El objetivo del taller es aprender a automatizar la actualización y publicación de proyectos en R y Quarto usando GitHub Actions. Para hacerlo más concreto, vamos a trabajar con un dashboard ya armado que muestra las Meriendas de LatinR, y veremos cómo configurar un flujo de integración y despliegue continuo (CI/CD) que:
 
-1. Obtenga datos desde una hoja de cálculo en Google Sheets.
-2. Procese la información con R.
-3. Renderice el dashboard con Quarto.
-4. Publique automáticamente el resultado en GitHub Pages.
+1.  Obtenga datos desde una hoja de cálculo en Google Sheets.
+2.  Procese la información con R.
+3.  Renderice el dashboard con Quarto.
+4.  Publique automáticamente el resultado en GitHub Pages.
 
 ## 📚 ¿Qué vas a aprender?
 
 Durante este taller, vas a aprender a:
 
-- Qué es una GitHub Action.
+-   Qué es una GitHub Action.
 
-- Cómo usar GitHub Actions para ejecutar código en R y Quarto.
+-   Cómo usar GitHub Actions para ejecutar código en R y Quarto.
 
-- Cómo utilizar Github Actions para publicar un producto de Quarto a Github Pages. 
+-   Cómo utilizar Github Actions para publicar un producto de Quarto a Github Pages.
 
-- Cómo configurar un workflow para que, con cada push o pull request, se actualice y publique automáticamente un reporte o dashboard.
+-   Cómo configurar un workflow para que, con cada push o pull request, se actualice y publique automáticamente un reporte o dashboard.
 
-- Cómo programar un workflow para que se ejecute automáticamente en intervalos regulares
-
-
+-   Cómo programar un workflow para que se ejecute automáticamente en intervalos regulares
 
 ## 🧰 Requisitos técnicos
 
-Es muy importante que tengas el entorno configurado antes del taller para poder seguirlo sin inconvenientes. Si tenés dudas, escribinos a [jesica.formoso@gmail.com](mailto:jesica.formoso@gmail.com) o [mcnanton@gmail.com](mailto:mcnanton@gmail.com).
+Es muy importante que tengas el entorno configurado antes del taller para poder seguirlo sin inconvenientes. Si tenés dudas, escribinos a [jesica.formoso\@gmail.com](mailto:jesica.formoso@gmail.com) o [mcnanton\@gmail.com](mailto:mcnanton@gmail.com).
 
 1.  **R (versión 4.5.1)**
 
@@ -95,19 +91,44 @@ install.packages("tidyverse")
 
 ```
 
-5. **Cuenta en GitHub activa y funcionando**
+5.  **Cuenta en GitHub activa y funcionando**
 
-Si todavía no tenés una, creá tu cuenta [aquí](https://github.com/). 
+Si todavía no tenés una, creá tu cuenta [aquí](https://github.com/).
 
-6. **Git instalado**
+6.  **Git instalado**
 
 Podés descargarlo e instalarlo desde [esta página](https://git-scm.com/downloads).
+
+## Quiénes somos
+
+
+### **Jesica Formoso** 
+
+
+#### 👩‍🎓 Formación y trayectoria**
+
+Soy psicóloga cognitiva, Doctora por la Universidad de Buenos Aires (UBA) e investigadora del Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET) en Argentina. En 2015 conocí R... y me enamoré. Desde entonces me especialicé en estadística aplicada a las ciencias de la salud (UBA), me certifiqué como [instructora de RStudio (hoy Posit)](https://education.rstudio.com/trainers/people/formoso+jesica/) y como [instructora](https://carpentries.org/community/instructors/) y [trainer](https://carpentries.org/community/instructor-trainers/) de The Carpentries.
+
+#### 💻 Qué hago
+
+Además de investigar sobre comprensión de texto en niños, enseño y desarrollo contenidos para cursos de estadística, programación, ciencia de datos y visualización en diversas universidades e instituciones. Además, asesoro proyectos de investigación en diseño metodológico, análisis estadístico y desarrollo de herramientas reproducibles. Esto implica colaborar estrechamente con equipos de investigación para automatizar flujos de trabajo, documentar código, organizar datos y desarrollar software que haga que la ciencia sea más abierta, reutilizable y sostenible.
+
+#### 🌍 Comunidades y ciencia abierta
+
+Soy parte del equipo de [MetaDocencia🍎](https://www.metadocencia.org/), donde coordino el área de medición de impacto y promuevo prácticas de ciencia abierta en América Latina. También organizo actividades en [R-Ladies Buenos Aires](https://rladiesba.netlify.app/), una comunidad que impulsa la diversidad en ciencia de datos y programación en R.
+
+### **María Nanton**
+
+#### 👩‍🎓 Formación y trayectoria**
+
+#### 💻 Qué hago
+
+#### 🌍 Comunidades y ciencia abierta
 
 
 ## 🤝 Código de conducta
 
 A definir.
-
 
 ## Licencia
 

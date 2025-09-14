@@ -7,8 +7,6 @@ website:
     left:
       - href: index.qmd
         text: Taller
-      - href: about.qmd
-        text: "👋 Somos María y Jesica"
       - href: slides.qmd
         text: Diapositivas
   favicon: "img/latinr-logo.png"
