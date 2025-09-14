@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "automatizar la publicación de reportes con Quarto y Github Actions"
+  title: "Automatizar la publicación de reportes con Quarto y Github Actions"
   navbar:
     left:
       - href: index.qmd

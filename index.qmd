@@ -84,10 +84,11 @@ e.  Hacé clic en **Apply** y luego en **OK**
 
 4.  **Paquetes de R necesarios**
 
-Instalá el paquete tidyverse desde la consola:
+Instalá el los paquetes *tidyverse* y *googlesheets4* desde la consola:
 
 ```{r, eval=FALSE}
 install.packages("tidyverse")
+install.packages("googlesheets4")
 
 ```
 
