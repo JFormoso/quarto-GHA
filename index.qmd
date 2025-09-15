@@ -54,7 +54,7 @@ Descargá e instalá Quarto CLI desde:
 
 👉 <https://quarto.org/docs/download/>
 
-3.  **RStudio (versión 2025.05.1)**
+3.  **RStudio (versión 2025.05.1)** y **R 4.5.1 o mayor**
 
 Descargá e instalá la última versión desde:
 
