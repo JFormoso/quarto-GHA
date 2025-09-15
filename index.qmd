@@ -114,17 +114,17 @@ Luego, descomprimí la carpeta en tu equipo.
 
 Dentro del proyecto instalá el paquete **renv** y luego utilizá la función **restore** para instalar todos los paquetes utilizados en el proyecto.
 
-```{r}
+```{r, eval=FALSE}
 
 install.packages("renv")
-renv::restore()      # instala paquetes desde renv.lock (si está en el repo)
+renv::restore()      
 ```
 
 - Opción 2 — Sin renv 
 
 Instalá todos los paquetes que usamos para el proyecto de forma manual con **install.packages()**.
 
-```{r}
+```{r, eval=FALSE}
 install.packages(c("tidyverse","lubridate","janitor","gt","forcats","tidytext","wordcloud2","stopwords","scales"))
 
 ```
