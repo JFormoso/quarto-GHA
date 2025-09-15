@@ -1,6 +1,5 @@
 # Automatizar la publicación de reportes con Quarto y Github Actions
 
-
 📅 **Fecha:** A definir
 
 🕕 **Horario:** A definir
@@ -28,4 +27,4 @@ Durante este taller, vas a aprender a:
 
 -   Cómo programar un workflow para que se ejecute automáticamente en intervalos regulares.
 
-Encontrá más información en la [página del taller](jformoso.github.io/quarto-GHA/). 
+Encontrá más información en la [página del taller](jformoso.github.io/quarto-GHA/).
