@@ -1,5 +1,5 @@
 ---
-title: "automatizar la publicación de reportes con Quarto y Github Actions"
+title: "Automatizar la publicación de reportes con Quarto y Github Actions"
 execute: 
   echo: true
 toc: true
