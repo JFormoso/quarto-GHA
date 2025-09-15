@@ -82,23 +82,53 @@ d.  Elegí la versión más reciente disponible
 e.  Hacé clic en **Apply** y luego en **OK**
 :::
 
-4.  **Paquetes de R necesarios**
-
-Instalá el los paquetes *tidyverse* y *googlesheets4* desde la consola:
-
-```{r, eval=FALSE}
-install.packages("tidyverse")
-install.packages("googlesheets4")
-
-```
-
-5.  **Cuenta en GitHub activa y funcionando**
+4.  **Cuenta en GitHub activa y funcionando**
 
 Si todavía no tenés una, creá tu cuenta [aquí](https://github.com/).
 
-6.  **Git instalado**
+5.  **Git instalado**
 
 Podés descargarlo e instalarlo desde [esta página](https://git-scm.com/downloads).
+
+6. **Clonar el repositorio censo-meriendas**
+
+Elegí uno de estos métodos y asegurate de tener el repo en tu compu al momento del taller:
+
+- Opción 1: Clonar con Git
+
+```bash
+
+git clone https://github.com/JFormoso/censo-meriendas
+cd censo-meriendas
+
+```
+
+- Opción 2: Descargar ZIP (si no usás Git)
+
+Ingresá al repositorio en https://github.com/JFormoso/censo-meriendas y en el botón verde **Code** seleccioná **Download ZIP**.
+Luego, descomprimí la carpeta en tu equipo.
+
+7.  **Paquetes de R necesarios**
+
+- Opción 1: Con renv (reproducible)
+
+Dentro del proyecto instalá el paquete **renv** y luego utilizá la función **restore** para instalar todos los paquetes utilizados en el proyecto.
+
+```{r}
+
+install.packages("renv")
+renv::restore()      # instala paquetes desde renv.lock (si está en el repo)
+```
+
+- Opción 2 — Sin renv 
+
+Instalá todos los paquetes que usamos para el proyecto de forma manual con **install.packages()**.
+
+```{r}
+install.packages(c("tidyverse","lubridate","janitor","gt","forcats","tidytext","wordcloud2","stopwords","scales"))
+
+```
+
 
 ## Quiénes somos
 
