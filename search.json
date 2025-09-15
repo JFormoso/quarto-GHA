@@ -2,49 +2,49 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "automatizar la publicación de reportes con Quarto y Github Actions",
+    "title": "Automatizar la publicación de reportes con Quarto y Github Actions",
     "section": "",
     "text": "📅 Fecha: A definir\n🕕 Horario: A definir"
   },
   {
     "objectID": "index.html#objetivo-del-taller",
     "href": "index.html#objetivo-del-taller",
-    "title": "automatizar la publicación de reportes con Quarto y Github Actions",
+    "title": "Automatizar la publicación de reportes con Quarto y Github Actions",
     "section": "🎯 Objetivo del taller",
     "text": "🎯 Objetivo del taller\nEl objetivo del taller es aprender a automatizar la actualización y publicación de proyectos en R y Quarto usando GitHub Actions. Para hacerlo más concreto, vamos a trabajar con un dashboard ya armado que muestra las Meriendas de LatinR, y veremos cómo configurar un flujo de integración y despliegue continuo (CI/CD) que:\n\nObtenga datos desde una hoja de cálculo en Google Sheets.\nProcese la información con R.\nRenderice el dashboard con Quarto.\nPublique automáticamente el resultado en GitHub Pages."
   },
   {
     "objectID": "index.html#qué-vas-a-aprender",
     "href": "index.html#qué-vas-a-aprender",
-    "title": "automatizar la publicación de reportes con Quarto y Github Actions",
+    "title": "Automatizar la publicación de reportes con Quarto y Github Actions",
     "section": "📚 ¿Qué vas a aprender?",
     "text": "📚 ¿Qué vas a aprender?\nDurante este taller, vas a aprender a:\n\nQué es una GitHub Action.\nCómo usar GitHub Actions para ejecutar código en R y Quarto.\nCómo utilizar Github Actions para publicar un producto de Quarto a Github Pages.\nCómo configurar un workflow para que, con cada push o pull request, se actualice y publique automáticamente un reporte o dashboard.\nCómo programar un workflow para que se ejecute automáticamente en intervalos regulares"
   },
   {
     "objectID": "index.html#requisitos-técnicos",
     "href": "index.html#requisitos-técnicos",
-    "title": "automatizar la publicación de reportes con Quarto y Github Actions",
+    "title": "Automatizar la publicación de reportes con Quarto y Github Actions",
     "section": "🧰 Requisitos técnicos",
-    "text": "🧰 Requisitos técnicos\nEs muy importante que tengas el entorno configurado antes del taller para poder seguirlo sin inconvenientes. Si tenés dudas, escribinos a jesica.formoso@gmail.com o mcnanton@gmail.com.\n\nR (versión 4.5.1)\n\nPara actualizar R:\n\ninstall.packages(\"installr\")\nlibrary(installr)\nupdateR()\n\n\nQuarto (versión 1.7)\n\nDescargá e instalá Quarto CLI desde:\n👉 https://quarto.org/docs/download/\n\nRStudio (versión 2025.05.1)\n\nDescargá e instalá la última versión desde:\n👉 https://posit.co/download/rstudio-desktop/\nLuego, verificá que RStudio esté usando la versión más reciente de R. En la consola de RStudio, escribí:\n\nversion\n\n               _                           \nplatform       x86_64-pc-linux-gnu         \narch           x86_64                      \nos             linux-gnu                   \nsystem         x86_64, linux-gnu           \nstatus                                     \nmajor          4                           \nminor          4.0                         \nyear           2024                        \nmonth          04                          \nday            24                          \nsvn rev        86474                       \nlanguage       R                           \nversion.string R version 4.4.0 (2024-04-24)\nnickname       Puppy Cup                   \n\n\n\n\n\n\n\n\nTipCómo cambiar la versión de R en RStudio\n\n\n\nSi RStudio no está usando la versión más reciente de R que instalaste, seguí estos pasos:\n\nAbrí el menú Herramientas / Tools\nSeleccioná Opciones globales / Global Options\nEn la pestaña General, buscá el campo Versión de R\nElegí la versión más reciente disponible\nHacé clic en Apply y luego en OK\n\n\n\n\nPaquetes de R necesarios\n\nInstalá el los paquetes tidyverse y googlesheets4 desde la consola:\n\ninstall.packages(\"tidyverse\")\ninstall.packages(\"googlesheets4\")\n\n\nCuenta en GitHub activa y funcionando\n\nSi todavía no tenés una, creá tu cuenta aquí.\n\nGit instalado\n\nPodés descargarlo e instalarlo desde esta página."
+    "text": "🧰 Requisitos técnicos\nEs muy importante que tengas el entorno configurado antes del taller para poder seguirlo sin inconvenientes. Si tenés dudas, escribinos a jesica.formoso@gmail.com o mcnanton@gmail.com.\n\nR (versión 4.5.1)\n\nPara actualizar R:\n\ninstall.packages(\"installr\")\nlibrary(installr)\nupdateR()\n\n\nQuarto (versión 1.7)\n\nDescargá e instalá Quarto CLI desde:\n👉 https://quarto.org/docs/download/\n\nRStudio (versión 2025.05.1)\n\nDescargá e instalá la última versión desde:\n👉 https://posit.co/download/rstudio-desktop/\nLuego, verificá que RStudio esté usando la versión más reciente de R. En la consola de RStudio, escribí:\n\nversion\n\n               _                           \nplatform       x86_64-pc-linux-gnu         \narch           x86_64                      \nos             linux-gnu                   \nsystem         x86_64, linux-gnu           \nstatus                                     \nmajor          4                           \nminor          4.0                         \nyear           2024                        \nmonth          04                          \nday            24                          \nsvn rev        86474                       \nlanguage       R                           \nversion.string R version 4.4.0 (2024-04-24)\nnickname       Puppy Cup                   \n\n\n\n\n\n\n\n\nTipCómo cambiar la versión de R en RStudio\n\n\n\nSi RStudio no está usando la versión más reciente de R que instalaste, seguí estos pasos:\n\nAbrí el menú Herramientas / Tools\nSeleccioná Opciones globales / Global Options\nEn la pestaña General, buscá el campo Versión de R\nElegí la versión más reciente disponible\nHacé clic en Apply y luego en OK\n\n\n\n\nCuenta en GitHub activa y funcionando\n\nSi todavía no tenés una, creá tu cuenta aquí.\n\nGit instalado\n\nPodés descargarlo e instalarlo desde esta página.\n\nClonar el repositorio censo-meriendas\n\nElegí uno de estos métodos y asegurate de tener el repo en tu compu al momento del taller:\n\nOpción 1: Clonar con Git\n\n\ngit clone https://github.com/JFormoso/censo-meriendas\ncd censo-meriendas\n\nOpción 2: Descargar ZIP (si no usás Git)\n\nIngresá al repositorio en https://github.com/JFormoso/censo-meriendas y en el botón verde Code seleccioná Download ZIP. Luego, descomprimí la carpeta en tu equipo.\n\nPaquetes de R necesarios\n\n\nOpción 1: Con renv (reproducible)\n\nDentro del proyecto instalá el paquete renv y luego utilizá la función restore para instalar todos los paquetes utilizados en el proyecto.\n\ninstall.packages(\"renv\")\nrenv::restore()      \n\n\nOpción 2 — Sin renv\n\nInstalá todos los paquetes que usamos para el proyecto de forma manual con install.packages().\n\ninstall.packages(c(\"tidyverse\",\"lubridate\",\"janitor\",\"gt\",\"forcats\",\"tidytext\",\"wordcloud2\",\"stopwords\",\"scales\"))"
   },
   {
     "objectID": "index.html#quiénes-somos",
     "href": "index.html#quiénes-somos",
-    "title": "automatizar la publicación de reportes con Quarto y Github Actions",
+    "title": "Automatizar la publicación de reportes con Quarto y Github Actions",
     "section": "Quiénes somos",
     "text": "Quiénes somos\n\nJesica Formoso\n\n👩‍🎓 Formación y trayectoria\nSoy psicóloga cognitiva, Doctora por la Universidad de Buenos Aires (UBA) e investigadora del Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET) en Argentina. En 2015 conocí R… y me enamoré. Desde entonces me especialicé en estadística aplicada a las ciencias de la salud (UBA), me certifiqué como instructora de RStudio (hoy Posit) y como instructora y trainer de The Carpentries.\n\n\n💻 Qué hago\nAdemás de investigar sobre comprensión de texto en niños, enseño y desarrollo contenidos para cursos de estadística, programación, ciencia de datos y visualización en diversas universidades e instituciones. Además, asesoro proyectos de investigación en diseño metodológico, análisis estadístico y desarrollo de herramientas reproducibles. Esto implica colaborar estrechamente con equipos de investigación para automatizar flujos de trabajo, documentar código, organizar datos y desarrollar software que haga que la ciencia sea más abierta, reutilizable y sostenible.\n\n\n🌍 Comunidades y ciencia abierta\nSoy parte del equipo de MetaDocencia🍎, donde coordino el área de medición de impacto y promuevo prácticas de ciencia abierta en América Latina. También organizo actividades en R-Ladies Buenos Aires, una comunidad que impulsa la diversidad en ciencia de datos y programación en R.\n\n\n\nMaría Nanton\n\n👩‍🎓 Formación y trayectoria\n\n\n💻 Qué hago\n\n\n🌍 Comunidades y ciencia abierta"
   },
   {
     "objectID": "index.html#código-de-conducta",
     "href": "index.html#código-de-conducta",
-    "title": "automatizar la publicación de reportes con Quarto y Github Actions",
+    "title": "Automatizar la publicación de reportes con Quarto y Github Actions",
     "section": "🤝 Código de conducta",
     "text": "🤝 Código de conducta\nA definir."
   },
   {
     "objectID": "index.html#licencia",
     "href": "index.html#licencia",
-    "title": "automatizar la publicación de reportes con Quarto y Github Actions",
+    "title": "Automatizar la publicación de reportes con Quarto y Github Actions",
     "section": "Licencia",
     "text": "Licencia\n© 2024 María Nanton y Jesica Formoso\nEstos materiales están publicados bajo la licencia Creative Commons Attribution 4.0 International (CC BY 4.0), la cual implica que podés compartir y adaptar el material siempre que reconozcas la autoría de forma adecuada.\n{{&lt; fa brands creative-commons size=2x &gt;}} {{&lt; fa brands creative-commons-by size=2x &gt;}}"
   }
