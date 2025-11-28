@@ -15,7 +15,9 @@ toc: true
 
 [Hoja de cálculo](https://docs.google.com/spreadsheets/d/1M4BfvfClvKog7rmbxh6UzzOAf84jPz87Tl-UHM5hvBA/edit?resourcekey=&gid=1072802213#gid=1072802213)
 
-Repositorio: 
+[Repositorio](https://github.com/JFormoso/censo-meriendas)
+
+[Archivo "_publish.yml"](https://github.com/JFormoso/quarto-GHA/blob/main/ejemplo.yml)
 
 ## 🎯 Objetivo del taller
 
