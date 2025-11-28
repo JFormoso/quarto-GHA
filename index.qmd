@@ -5,9 +5,17 @@ execute:
 toc: true
 ---
 
-📅 **Fecha:** A definir
+📅 **Fecha:** 1 de diciembre, 2025
 
-🕕 **Horario:** A definir
+🕕 **Horario:** 10 am (UTC -3 Hora Buenos Aires)
+
+## Materiales para el ejercicio práctico
+
+[Formulario para colectar respuestas](https://forms.gle/4AGu9StQKVsVvj5x7)
+
+[Hoja de cálculo](https://docs.google.com/spreadsheets/d/1M4BfvfClvKog7rmbxh6UzzOAf84jPz87Tl-UHM5hvBA/edit?resourcekey=&gid=1072802213#gid=1072802213)
+
+Repositorio: 
 
 ## 🎯 Objetivo del taller
 
@@ -54,7 +62,7 @@ Descargá e instalá Quarto CLI desde:
 
 👉 <https://quarto.org/docs/download/>
 
-3.  **RStudio (versión 2025.05.1)** y **R 4.5.1 o mayor**
+3.  **RStudio (versión 2025.05.1)** 
 
 Descargá e instalá la última versión desde:
 
