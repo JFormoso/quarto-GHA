@@ -1,8 +1,8 @@
 # Automatizar la publicación de reportes con Quarto y Github Actions
 
-📅 **Fecha:** A definir
+📅 **Fecha:** 1 de Diciembre, 2025
 
-🕕 **Horario:** A definir
+🕕 **Horario:** 10 am (UTC -3, Hora Buenos Aires)
 
 ## 🎯 Objetivo del taller
 

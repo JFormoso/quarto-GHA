@@ -9,6 +9,8 @@ toc: true
 
 🕕 **Horario:** 10 am (UTC -3 Hora Buenos Aires)
 
+[**Inscripción aquí**](https://www.eventbrite.cl/e/automatiza-la-publicacion-de-tus-reportes-con-quarto-y-github-actions-tickets-1967685428084)
+
 ## Materiales para el ejercicio práctico
 
 [Formulario para colectar respuestas](https://forms.gle/4AGu9StQKVsVvj5x7)
