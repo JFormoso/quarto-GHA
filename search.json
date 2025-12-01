@@ -54,5 +54,299 @@
     "title": "Automatizar la publicación de reportes con Quarto y Github Actions",
     "section": "Licencia",
     "text": "Licencia\n© 2024 María Nanton y Jesica Formoso\nEstos materiales están publicados bajo la licencia Creative Commons Attribution 4.0 International (CC BY 4.0), la cual implica que podés compartir y adaptar el material siempre que reconozcas la autoría de forma adecuada."
+  },
+  {
+    "objectID": "slides.html#hola",
+    "href": "slides.html#hola",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "¡Hola!👋",
+    "text": "¡Hola!👋\n\n\n\n\n\nMaría Cristina Nanton Coordinación en Ciencia de Datos en Gerencia de Información y Estadísticas en Salud (GCBA) AI Dev en The Global Health Network  R-Ladies Buenos Aires💜 Colaboradora en MetaDocencia🍎\n\n\n\n\n\n\nJesica Formoso Investigadora Adjunta, CIIPME-CONICET   Medición de Impacto en Metadocencia🍎 R-Ladies Buenos Aires 💜"
+  },
+  {
+    "objectID": "slides.html#qué-vamos-a-ver-hoy",
+    "href": "slides.html#qué-vamos-a-ver-hoy",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Qué vamos a ver hoy",
+    "text": "Qué vamos a ver hoy\nAgenda\n\nConceptos básicos para trabajar con GitHub Actions, GH Pages y Quarto\nPreparación de un entorno de trabajo para flujos bien automatizados\nCreación de un flujo automatizado de publicación en GH Pages basado en pushes a un repositorio\nAdaptación a ejecuciones periódicas"
+  },
+  {
+    "objectID": "slides.html#qué-vamos-a-implementar-hoy",
+    "href": "slides.html#qué-vamos-a-implementar-hoy",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Qué vamos a implementar hoy",
+    "text": "Qué vamos a implementar hoy\nUn sitio publicado en GH Pages generado desde Quarto alimentado de manera periódica y automatizada a partir de respuestas a un formulario con orquestación via GH Actions"
+  },
+  {
+    "objectID": "slides.html#github-y-github-actions",
+    "href": "slides.html#github-y-github-actions",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "GitHub y GitHub Actions",
+    "text": "GitHub y GitHub Actions\n\n\n\n\n\n\n\nGitHub\nPlataforma orientada al desarrollo de software que integra repositorios con control de versiones con un enfoque de desarrollo colaborativo\n\n\n\n\n\n\nGitHub Actions\nHerramienta de integración y deploy continuo (CI/CD) que permite automatizar el trabajo con código, desde los testeos hasta la publicación de productos"
+  },
+  {
+    "objectID": "slides.html#cicd",
+    "href": "slides.html#cicd",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "¿CI/CD?",
+    "text": "¿CI/CD?\n\nLa integración continua (CI) consiste en integrar los cambios del código en un repositorio de código fuente compartido de forma automática y frecuente.La implementación o distribución continua (CD) es un proceso de dos partes que implica la integración, la prueba y la distribución de los cambios en el código.\n\n\nFuente: Red Hat"
+  },
+  {
+    "objectID": "slides.html#ejemplos-no-tan-lejanos",
+    "href": "slides.html#ejemplos-no-tan-lejanos",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Ejemplos no tan lejanos",
+    "text": "Ejemplos no tan lejanos\nrOpenSci usa CI/CD con GHA para actualizar su Guía de desarrollo!"
+  },
+  {
+    "objectID": "slides.html#ejemplos-no-tan-lejanos-1",
+    "href": "slides.html#ejemplos-no-tan-lejanos-1",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Ejemplos no tan lejanos",
+    "text": "Ejemplos no tan lejanos\nTuring Way usa CI/CD con GHA para flujos de chequeo y publicación: por ejemplo, para revisar el mal uso del latin en sus publicaciones!"
+  },
+  {
+    "objectID": "slides.html#notaron-el-uso-de-yaml",
+    "href": "slides.html#notaron-el-uso-de-yaml",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "¿Notaron el uso de YAML?",
+    "text": "¿Notaron el uso de YAML?\nLas GHA usan sintaxis YAML para organizar las automatizaciones."
+  },
+  {
+    "objectID": "slides.html#qué-vamos-a-incluir-en-este-yaml",
+    "href": "slides.html#qué-vamos-a-incluir-en-este-yaml",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "¿Qué vamos a incluir en este YAML?",
+    "text": "¿Qué vamos a incluir en este YAML?\n¡Todo lo que un proyecto de Quarto con R necesita para ejecutarse de manera automática!\n\nQuarto, por supuesto\nR para procesar nuestros datos\nUn repositorio donde este alojado nuestro archivo Qmd"
+  },
+  {
+    "objectID": "slides.html#qué-vamos-a-incluir-en-este-yaml-1",
+    "href": "slides.html#qué-vamos-a-incluir-en-este-yaml-1",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "¿Qué vamos a incluir en este YAML?",
+    "text": "¿Qué vamos a incluir en este YAML?\n¡Todo lo que un proyecto de Quarto con R necesita para ejecutarse de manera automática!\n\nQuarto, por supuesto\nR para procesar nuestros datos\nUn repositorio donde este alojado nuestro archivo Qmd\n\nY además:\n\nInstrucciones sobre cuándo correr las automatizaciones…\n… y una máquina virtual que las ejecute…\n… que pueda acceder a las dependencias necesarias e instalarlas!"
+  },
+  {
+    "objectID": "slides.html#de-nuestra-pc-a-gha",
+    "href": "slides.html#de-nuestra-pc-a-gha",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "De nuestra PC a GHA",
+    "text": "De nuestra PC a GHA"
+  },
+  {
+    "objectID": "slides.html#instalación-de-dependencias",
+    "href": "slides.html#instalación-de-dependencias",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Instalación de dependencias",
+    "text": "Instalación de dependencias\nBiblioteca renv\n\n\n\n\n\n\n\n\nHerramienta que permite capturar todas las bibliotecas que usadas en un proyecto e instalarlas si es necesario\nSímil venv si vienen de manejar Python"
+  },
+  {
+    "objectID": "slides.html#dónde-corre-todo-esto-en-una-ejecución-automatizada",
+    "href": "slides.html#dónde-corre-todo-esto-en-una-ejecución-automatizada",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "¿Dónde corre todo esto en una ejecución automatizada?",
+    "text": "¿Dónde corre todo esto en una ejecución automatizada?\n\n\nUna máquina virtual (VM) es una manera de emular un equipo físico (como nuestras computadoras) en todos sus aspectos: espacio de almacenamiento, memoria y sistema operativo.\nSon entornos aislados que podemos utilizar para ejecutar procesos."
+  },
+  {
+    "objectID": "slides.html#dándole-ritmo-a-la-automatización",
+    "href": "slides.html#dándole-ritmo-a-la-automatización",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Dándole ritmo a la automatización",
+    "text": "Dándole ritmo a la automatización\nProgramación de tareas con crontab\nEn sistemas operativos Unix, cron es un administrador de procesos para ejecutarlos a intervalos regulares\nExpresiones CRON\n* * * * *   comando-a-ejecutar\n| | | | |\n| | | | └── Día de la semana (0-7, donde 0 y 7 representan domingo)\n| | | └──── Mes (1-12)\n| | └────── Día del mes (1-31)\n| └──────── Hora (0-23)\n└────────── Minuto (0-59)"
+  },
+  {
+    "objectID": "slides.html#cron",
+    "href": "slides.html#cron",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "CRON",
+    "text": "CRON\nCon estas expresiones podemos ordenar la ejecución de procesos con cualquier periodicidad\n0 * * * *   revisar_cada_una_hora\n| | | | |\n| | | | └── Día de la semana (todos)\n| | | └──── Mes (todos)\n| | └────── Día del mes (todos)\n| └──────── Hora (todos)\n└────────── Minuto (al minuto 0, es decir, el inicio de cada hora)"
+  },
+  {
+    "objectID": "slides.html#del-código-al-html",
+    "href": "slides.html#del-código-al-html",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Del código al HTML",
+    "text": "Del código al HTML\n\n\n\n\n\n\n\nQuarto\nHerramienta para generar artículos, sitios o publicaciones en formatos word, pdf, html, entre otros\n\n\n\n\n\n\nGithub Pages\nHerramienta de GitHub para crear sitios web directamente desde el contenido de un repositorio"
+  },
+  {
+    "objectID": "slides.html#ahora-sí-la-infraestructura-de-nuestra-automatización",
+    "href": "slides.html#ahora-sí-la-infraestructura-de-nuestra-automatización",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Ahora sí: la infraestructura de nuestra automatización",
+    "text": "Ahora sí: la infraestructura de nuestra automatización"
+  },
+  {
+    "objectID": "slides.html#mini-evaluación-1-1",
+    "href": "slides.html#mini-evaluación-1-1",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Mini-evaluación 1:",
+    "text": "Mini-evaluación 1:\n¿Qué herramiena permite controlar los paquetes necesarios para reproducir el proyecto en GitHub Actions?\n👍 Quarto\n😮 renv\n👏 GitHub"
+  },
+  {
+    "objectID": "slides.html#mini-evaluación-1-2",
+    "href": "slides.html#mini-evaluación-1-2",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Mini-evaluación 1:",
+    "text": "Mini-evaluación 1:\n¿Qué formato utilizan los archivos de configuración de las GitHub Actions?\n👍 YAML\n😮 .workflow\n👏 cron"
+  },
+  {
+    "objectID": "slides.html#mini-evaluación-1-3",
+    "href": "slides.html#mini-evaluación-1-3",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Mini-evaluación 1:",
+    "text": "Mini-evaluación 1:\n¿Cuál es el sistema operativo de la máquina que ejecutará las Github Actions?\n👍 El de la computadora en la que se redactó el código\n😮 El que elija GitHub para mi acción\n👏 El de la máquina virtual que configure yo"
+  },
+  {
+    "objectID": "slides.html#pasos-previos-a-generar-la-github-action",
+    "href": "slides.html#pasos-previos-a-generar-la-github-action",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Pasos previos a generar la GitHub Action",
+    "text": "Pasos previos a generar la GitHub Action\n\nCreamos el form y la hoja de cálculo con acceso a cualquiera vía link\nCreamos un proyecto de Quarto (website)\n\ninicializamos git\ninicializamos renv\n\nCreamos el repositorio remoto en GitHub\nArmamos el reporte o dashboard en el archivo index.qmd\n\nrenv::snapshot()\n\nConectamos el repositorio local y el remoto desde la terminal de R\nActualizamos los cambios (commit y push)"
+  },
+  {
+    "objectID": "slides.html#section-5",
+    "href": "slides.html#section-5",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "",
+    "text": "build-deploy es el identificador del job\nruns-on indica el tipo de máquina (runner) donde se ejecutará el job"
+  },
+  {
+    "objectID": "slides.html#section-6",
+    "href": "slides.html#section-6",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "",
+    "text": "permissions configura qué puede hacer el job sobre el contenido del repositorio:\n\nwrite: permiso de escritura (crear archivos, releases, actualizar archivos)\nread: permiso de lectura (no puede modificar el repositorio)\nSe puede especificar de forma global o a nivel de cada job"
+  },
+  {
+    "objectID": "slides.html#tipos-de-steps-pasos",
+    "href": "slides.html#tipos-de-steps-pasos",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Tipos de steps (pasos)",
+    "text": "Tipos de steps (pasos)\n\n\n\n\nuses utiliza una acción ya existente, empaquetada por GitHub o la comunidad"
+  },
+  {
+    "objectID": "slides.html#tipos-de-steps-pasos-1",
+    "href": "slides.html#tipos-de-steps-pasos-1",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Tipos de steps (pasos)",
+    "text": "Tipos de steps (pasos)\n\n\n\n\nrun ejecuta comandos directamente en la terminal del runner"
+  },
+  {
+    "objectID": "slides.html#tipos-de-steps-pasos-2",
+    "href": "slides.html#tipos-de-steps-pasos-2",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Tipos de steps (pasos)",
+    "text": "Tipos de steps (pasos)\n\n\n\n\n\nSe puede ejecutar código en la terminal (shell) de la maquina virtual (para ubuntu, es bash)"
+  },
+  {
+    "objectID": "slides.html#tipos-de-steps-pasos-3",
+    "href": "slides.html#tipos-de-steps-pasos-3",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Tipos de steps (pasos)",
+    "text": "Tipos de steps (pasos)\n\n\n\n\n\nSe puede ejecutar código indicando una terminal particular, en este caso la de R."
+  },
+  {
+    "objectID": "slides.html#tipos-de-steps-pasos-4",
+    "href": "slides.html#tipos-de-steps-pasos-4",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Tipos de steps (pasos)",
+    "text": "Tipos de steps (pasos)\nEste paso usa una acción pre empaquetada para publicar un proyecto de Quarto.\n\n\n\n\nwith:\n\nLos argumentos que la acción necesita para funcionar.\ntarget: gh-pages/netlify/connect"
+  },
+  {
+    "objectID": "slides.html#tipos-de-steps-pasos-5",
+    "href": "slides.html#tipos-de-steps-pasos-5",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Tipos de steps (pasos)",
+    "text": "Tipos de steps (pasos)\nEste paso usa una acción pre empaquetada para publicar un proyecto de Quarto.\n\n\n\n\nenv:\n\nVariables de entorno.\nGITHUB_TOKEN"
+  },
+  {
+    "objectID": "slides.html#github_token",
+    "href": "slides.html#github_token",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "GITHUB_TOKEN",
+    "text": "GITHUB_TOKEN\nToken de autorización que GitHub genera automáticamente para cada ejecución de un workflow de GitHub Actions.\n\n\n\n\n\nIdentifica al workflow y le permite interactuar con GitHub\nSolo existe mientras dura la ejecución\nTiene permisos controlables"
+  },
+  {
+    "objectID": "slides.html#secretos-del-repositorio",
+    "href": "slides.html#secretos-del-repositorio",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Secretos del repositorio",
+    "text": "Secretos del repositorio\n\n\n\n\n\nsecrets hace referencia a un espacio seguro donde GitHub guarda valores sensibles (claves, tokens, constraseñas) encriptados."
+  },
+  {
+    "objectID": "slides.html#secretos-del-repositorio-1",
+    "href": "slides.html#secretos-del-repositorio-1",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Secretos del repositorio",
+    "text": "Secretos del repositorio\n\n\n\n\n\nGITHUB_TOKEN es el nombre de uno de esos valores."
+  },
+  {
+    "objectID": "slides.html#tipos-de-eventos-que-disparan-un-workflow-triggers",
+    "href": "slides.html#tipos-de-eventos-que-disparan-un-workflow-triggers",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Tipos de eventos que disparan un workflow (Triggers)",
+    "text": "Tipos de eventos que disparan un workflow (Triggers)"
+  },
+  {
+    "objectID": "slides.html#repaso-de-la-práctica",
+    "href": "slides.html#repaso-de-la-práctica",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Repaso de la práctica",
+    "text": "Repaso de la práctica\n\nCreamos un fork del repositorio censo-meriendas\nCreamos el archivo .github/workflows/_publish.yml\nCreamos la rama “gh-pages” y revisamos el setup en settings/pages\nModificamos los triggers para:\n\nActualizar tras cada push\nActualizar periódicamente\n\nRevisamos el log de un workflow"
+  },
+  {
+    "objectID": "slides.html#mini-evaluación-2-1",
+    "href": "slides.html#mini-evaluación-2-1",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Mini-evaluación 2:",
+    "text": "Mini-evaluación 2:\nEn qué parte del YAML se indica cuáles serán los disparadores del workflow?\n👍 jobs:\n😮 steps:\n👏 on:"
+  },
+  {
+    "objectID": "slides.html#mini-evaluación-2-2",
+    "href": "slides.html#mini-evaluación-2-2",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Mini-evaluación 2:",
+    "text": "Mini-evaluación 2:\n¿De qué manera se puede ejecutar código de R dentro de una GHA?\n👍 Dentro de un R script (ejemplo.R) via terminal de la VM\n😮 Dentro de un R script (ejemplo.R) via terminal de R\n🎉 Como un comando R aislado via Rscript -e (install.packages())\n👏 Todas las opciones son correctas"
+  },
+  {
+    "objectID": "slides.html#buenas-prácticas-1",
+    "href": "slides.html#buenas-prácticas-1",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Buenas prácticas",
+    "text": "Buenas prácticas\n\nSeparar el “build”, las pruebas (“test”) y el “deploy” en jobs independientes.\nParalelizar jobs cuando sea posible.\nReutilizar acciones de terceros (third-party actions)\nInstalar versiones específicas de las herramientas\nAplicar el principio de menor privilegio.\nGestionar claves de API y contraseñas como variables de entorno usando GitHub Secrets."
+  },
+  {
+    "objectID": "slides.html#secretos-del-repositorio-2",
+    "href": "slides.html#secretos-del-repositorio-2",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Secretos del repositorio",
+    "text": "Secretos del repositorio\n\n\n\n\n\nPermiten acceder a credenciales o información sensible sin escribirlo directamente en el código.\nTodo lo que almacenamos aquí queda cifrado y nunca se muestra en texto plano."
+  },
+  {
+    "objectID": "slides.html#secretos-del-repositorio-3",
+    "href": "slides.html#secretos-del-repositorio-3",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Secretos del repositorio",
+    "text": "Secretos del repositorio\n\n\nCada secreto tiene un nombre y un valor oculto.\nUsamos el nombre para invocar el valor desde GitHub Actions."
+  },
+  {
+    "objectID": "slides.html#secretos-del-repositorio-4",
+    "href": "slides.html#secretos-del-repositorio-4",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Secretos del repositorio",
+    "text": "Secretos del repositorio\n\nCon env creamos variables de entorno dentro del job, cuyo valor proviene de los secretos del repositorio."
+  },
+  {
+    "objectID": "slides.html#secretos-del-repositorio-5",
+    "href": "slides.html#secretos-del-repositorio-5",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Secretos del repositorio",
+    "text": "Secretos del repositorio\n\n\n\n\nEn R, las variables de entorno se leen con Sys.getenv()."
+  },
+  {
+    "objectID": "slides.html#temas-cubiertos-por-el-taller",
+    "href": "slides.html#temas-cubiertos-por-el-taller",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Temas cubiertos por el taller",
+    "text": "Temas cubiertos por el taller"
   }
 ]
