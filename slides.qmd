@@ -338,8 +338,6 @@ Vamos a usar las reacciones de zoom para preguntas de opción múltiple
 
 ## Pasos previos a generar la GitHub Action
 
-# Break (5 minutos)
-
 ::: incremental
 -   Creamos el form y la hoja de cálculo con acceso a cualquiera vía
     link
@@ -352,6 +350,10 @@ Vamos a usar las reacciones de zoom para preguntas de opción múltiple
 -   Conectamos el repositorio local y el remoto desde la terminal de R
 -   Actualizamos los cambios (commit y push)
 :::
+
+
+# Break (5 minutos)
+
 
 # Workflow de Github Actions
 
