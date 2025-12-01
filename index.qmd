@@ -164,10 +164,15 @@ Soy parte del equipo de [MetaDocencia🍎](https://www.metadocencia.org/), donde
 
 #### 👩‍🎓 Formación y trayectoria
 
+Soy Comunicadora Social y maestranda en Minería de Datos por la UBA. Desde hace ,ás de 5 años trabajo en el sector público y privado en proyectos de análisis y ciencia de datos. También soy docente en temas de programación y estadística a nivel terciario e [instructora](https://carpentries.org/community/instructors/) en The Carpentries.
+
 #### 💻 Qué hago
+
+Coordino un equipo de ciencia de datos de 20 personas en la Gerencia de Información y Estadísticas en Salud del Ministerio de Salud de la Ciudad de Buenos Aires y soy desarrolladora IA en [The Global Health Network](https://tghn.org/)
 
 #### 🌍 Comunidades y ciencia abierta
 
+Organizadora en [R-Ladies Buenos Aires](https://rladiesba.netlify.app/), una comunidad que impulsa la diversidad en ciencia de datos y programación en R. También soy parte del equipo global de R-Ladies. 
 
 ## 🤝 Código de conducta
 
