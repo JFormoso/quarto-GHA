@@ -171,11 +171,11 @@ Soy parte del equipo de [MetaDocencia🍎](https://www.metadocencia.org/), donde
 
 ## 🤝 Código de conducta
 
-A definir.
+Todas las personas que participan en nuestro taller deben estar de acuerdo con el [código de conducta de LatinR](https://latinr.org/sobre/coc/).
 
 ## Licencia
 
-© 2024 María Nanton y Jesica Formoso
+© 2025 María Nanton y Jesica Formoso
 
 Estos materiales están publicados bajo la licencia [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/), la cual implica que podés compartir y adaptar el material siempre que reconozcas la autoría de forma adecuada.
 
