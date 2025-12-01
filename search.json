@@ -200,7 +200,7 @@
     "href": "slides.html#pasos-previos-a-generar-la-github-action",
     "title": "Automatiza la publicación de tus reportes",
     "section": "Pasos previos a generar la GitHub Action",
-    "text": "Pasos previos a generar la GitHub Action\n\nCreamos el form y la hoja de cálculo con acceso a cualquiera vía link\nCreamos un proyecto de Quarto (website)\n\ninicializamos git\ninicializamos renv\n\nCreamos el repositorio remoto en GitHub\nArmamos el reporte o dashboard en el archivo index.qmd\n\nrenv::snapshot()\n\nConectamos el repositorio local y el remoto desde la terminal de R\nActualizamos los cambios (commit y push)"
+    "text": "Pasos previos a generar la GitHub Action"
   },
   {
     "objectID": "slides.html#section-5",
