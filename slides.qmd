@@ -335,9 +335,10 @@ Vamos a usar las reacciones de zoom para preguntas de opción múltiple
 
 **Recorrido por los elementos del proyecto en el repositorio**
 
-# Break (5 minutos)
 
 ## Pasos previos a generar la GitHub Action
+
+# Break (5 minutos)
 
 ::: incremental
 -   Creamos el form y la hoja de cálculo con acceso a cualquiera vía
