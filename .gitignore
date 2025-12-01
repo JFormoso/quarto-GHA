@@ -3,3 +3,4 @@ renv/library/
 .Rhistory
 .RData
 _site/
+/.quarto/
